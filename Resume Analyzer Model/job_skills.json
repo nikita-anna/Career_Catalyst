@@ -1,7 +1,0 @@
-{
-    "Data Scientist": ["Python", "Machine Learning", "Deep Learning", "SQL", "NLP", "Statistics"],
-    "Backend Developer": ["Java", "Spring Boot", "Microservices", "REST API", "Kubernetes", "Docker"],
-    "Frontend Developer": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Figma"],
-    "Full Stack Developer": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Node.js", "MongoDB", "SQL"],
-    "DevOps Engineer": ["Docker", "Kubernetes", "CI/CD", "Terraform", "AWS", "Jenkins"]
-}
