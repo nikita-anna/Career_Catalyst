@@ -11,7 +11,6 @@ ALLOWED_EXTENSIONS = {"pdf"}
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-# Load job roles from job_skills.json
 with open("job_skills.json", "r", encoding="utf-8") as f:
     JOB_SKILLS = json.load(f)
 

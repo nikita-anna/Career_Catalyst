@@ -28,7 +28,7 @@ def train_ner():
         entities = [(start, end, label) for start, end, label in entry["entities"]]
         examples.append(Example.from_dict(nlp.make_doc(text), {"entities": entities}))
 
-    for _ in range(30):  # Train for 30 epochs
+    for _ in range(30):  
         losses = {}
         nlp.update(examples, drop=0.3, losses=losses)
         print(f"Losses: {losses}")
