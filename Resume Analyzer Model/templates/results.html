@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Analysis Results for {{ job_role }}</h2>
+
+        <h3>Extracted Skills:</h3>
+        <p>{{ extracted_skills | join(", ") if extracted_skills else "None" }}</p>
+
+        <h3>Missing Skills:</h3>
+        <p>{{ missing_skills | join(", ") if missing_skills else "None" }}</p>
+
+        <h3>Additional Skills (Not Required):</h3>
+        <p>{{ additional_skills | join(", ") if additional_skills else "None" }}</p>
+
+        <a href="/">Analyze Another Resume</a>
+    </div>
+</body>
+</html>
