@@ -1,5 +1,5 @@
 import spacy
-import fitz  # PyMuPDF
+import fitz  
 import re
 
 MODEL_DIR = "ner_model"
